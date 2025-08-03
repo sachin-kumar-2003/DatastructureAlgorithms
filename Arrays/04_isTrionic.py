@@ -1,4 +1,5 @@
 '''3637. Trionic Array I'''
+from typing import List
 class Solution:
     def isTrionic(self, nums: List[int]) -> bool:
         i = 0
