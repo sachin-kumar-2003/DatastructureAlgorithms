@@ -1,3 +1,4 @@
+'''1048. Longest String Chain'''
 from typing import List
 class Solution:
     def check ( self , bigStr , smallStr):
