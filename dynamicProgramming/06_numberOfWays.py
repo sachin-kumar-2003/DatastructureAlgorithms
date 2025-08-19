@@ -5,14 +5,14 @@ class Solution:
             return 1
         if n < 0:
             return 0
-        val = num  x
+        val = num ** x
         if val > n:
             return 0
         if memo[num][n] != -1:
             return memo[num][n]
         take = self.dp(num + 1, n - val, x, memo)
         skip = self.dp(num + 1 , n, x, memo)
-        memo[num][n] = (take + skip) % (10  9 + 7)
+        memo[num][n] = (take + skip) % (10 ** 9 + 7)
         return memo[num][n]
         
     def numberOfWays(self, n: int, x: int) -> int:
